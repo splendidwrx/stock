@@ -59,7 +59,7 @@ if [ $# == 1 ] ; then
 
     docker run -itd --link=mysqldb --name stock  \
       -e LANG=zh_CN.UTF-8 -e LC_CTYPE=zh_CN.UTF-8 -e PYTHONIOENCODING=utf-8 \
-      -e TUSHARE_TOKEN=007b2f24bc3afb5ff5c604b0aee583956840210348169bc2436bddf9 \
+      -e TUSHARE_TOKEN=13bdd6b0f5eec536d91bed1f0c99dc9aa2f333ad863775cb895bfc2c \
       -p 8888:8888 -p 9999:9999 --restart=always \
       -v ${PWD}/jobs:/data/stock/jobs \
       -v ${PWD}/libs:/data/stock/libs \
